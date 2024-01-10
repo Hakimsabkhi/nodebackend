@@ -4,20 +4,16 @@ class="position-relative d-flex flex-column flex-shrink-0 p-3 text-bg-dark sideb
 >
 <span style="right: 10px; top: 2px" class="position-absolute">
   <button class="btn" onclick="toggleSidebar()">
-    <i  class="bi bi-x-circle"></i>
+    <i  class="bi bi-arrow-left-right"></i>
   </button>
 </span>
-
 <a
   href="/"
   class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
 >
-  <i class="bi bi-lightning-charge"></i>
-
 </a>
-<hr />
-<ul class="nav nav-pills flex-column mb-auto">
-  <li class="nav-item">
+<ul class="nav nav-pills flex-column mt-4 mb-auto">
+  <li class="nav-item mtt">
     <a href="/" class="nav-link text-white <%= currentPage==="index" ? "active" : null %> " aria-current="page">
       <svg class="bi pe-none me-2" width="16" height="16">
         <use xlink:href="#home" />
@@ -25,7 +21,6 @@ class="position-relative d-flex flex-column flex-shrink-0 p-3 text-bg-dark sideb
       <span class="sidebar-text"> Home </span>
     </a>
   </li>
-
   <li>
     <a href="./user/add.html" class="nav-link text-white <%= currentPage==="add" ? "active" : null %>">
       <svg class="bi pe-none me-2" width="16" height="16">

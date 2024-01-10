@@ -3,9 +3,13 @@ const Schema = mongoose.Schema;
 
 // define the Schema (the structure of the article)
 const articleSchema = new Schema({
-  title: String,
-  summary: String,
-  body: String,
+  firstName: String,
+  lastName:String,
+  email: String,
+  telephone:String,
+  age: Number,
+  country: String,
+  gender: String,
 });
 
 // Create a model based on that schema
